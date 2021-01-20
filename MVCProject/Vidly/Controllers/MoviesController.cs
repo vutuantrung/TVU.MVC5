@@ -27,5 +27,21 @@ namespace Vidly.Controllers
 
             return View( movie );
         }
+
+        public ActionResult Edit(int movieId)
+        {
+            // Like this we can pass ~/movies/edit?movieId=1 => works
+            // But it will not work with ~movies/edit/1, bc the default parameter is id (Look at in RouteConfig.cs)
+            return Content("id=" + movieId);
+        }
+
+        // Return a view which display the list of movies in DB
+        public ActionResult Index(int? pageIndex, string sortBy)
+        {
+            if (!pageIndex.HasValue) pageIndex = 1;
+            if (string.IsNullOrEmpty(sortBy)) sortBy = "Name";
+
+            return Content($@"Page index = {pageIndex}, sort by = {sortBy}");
+        }
     }
 }
