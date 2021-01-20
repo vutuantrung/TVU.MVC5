@@ -38,10 +38,17 @@ namespace Vidly.Controllers
         // Return a view which display the list of movies in DB
         public ActionResult Index(int? pageIndex, string sortBy)
         {
+            // movies/index?pageIndex=1&sortBy="unknown"
             if (!pageIndex.HasValue) pageIndex = 1;
             if (string.IsNullOrEmpty(sortBy)) sortBy = "Name";
 
             return Content($@"Page index = {pageIndex}, sort by = {sortBy}");
+        }
+
+        public ActionResult ByReleasedDate(int year, int month)
+        {
+            // movies/released/{year}/{month}
+            return Content($@"Released year: {year}, month: {month}");
         }
     }
 }
