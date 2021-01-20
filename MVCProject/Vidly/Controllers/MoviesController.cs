@@ -14,6 +14,17 @@ namespace Vidly.Controllers
         {
             var movie = new Movie() {Name = "Shrek!"};
 
+            // Why we can return View instead of ActionResult, bc ActionResult has many types of result
+            // Explanation: https://www.c-sharpcorner.com/article/action-result-in-asp-net-mvc/#:~:text=Action%20Result%20is%20actually%20a,of%20action%20when%20it%20executes.
+            // The ActionResult is an abstract class
+
+
+            //return Content("Hello world.");
+            //return HttpNotFound();
+            //return new EmptyResult();
+            //return RedirectToAction( "Index", "Home", new { page = 1, sortBy = "name" } );
+
+
             return View( movie );
         }
     }
