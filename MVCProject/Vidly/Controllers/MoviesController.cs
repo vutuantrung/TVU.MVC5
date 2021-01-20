@@ -45,6 +45,9 @@ namespace Vidly.Controllers
             return Content($@"Page index = {pageIndex}, sort by = {sortBy}");
         }
 
+        // Attribute routing
+        // https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/
+        [Route("movies/released/{year}/{month:regex(\\d{4}):range(1,12)}")]
         public ActionResult ByReleasedDate(int year, int month)
         {
             // movies/released/{year}/{month}
