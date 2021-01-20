@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -13,6 +14,17 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() {Name = "Shrek!"};
+            var customers = new List<Customer>
+            {
+                new Customer() {Name = "Customer 1"},
+                new Customer() {Name = "Customer 2"},
+            };
+
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
 
             // Why we can return View instead of ActionResult, bc ActionResult has many types of result ?
             // Explanation: https://www.c-sharpcorner.com/article/action-result-in-asp-net-mvc/#:~:text=Action%20Result%20is%20actually%20a,of%20action%20when%20it%20executes.
@@ -30,7 +42,7 @@ namespace Vidly.Controllers
             //var viewResult = new ViewResult();
             //viewResult.ViewData.Model <- movie will be assigned into ViewData dictionary
 
-            return View( movie );
+            return View( viewModel );
         }
 
         public ActionResult Edit(int movieId)
