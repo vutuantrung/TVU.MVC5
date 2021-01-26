@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly.WebApp", "Vidly.WebApp\Vidly.WebApp.csproj", "{440115BC-A512-4B41-BB7F-9631F7A7ED11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly.WebApp.Tests", "Vidly.WebApp.Tests\Vidly.WebApp.Tests.csproj", "{3FB1FC12-F242-43D3-984A-3669EF8BC23E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{440115BC-A512-4B41-BB7F-9631F7A7ED11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440115BC-A512-4B41-BB7F-9631F7A7ED11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440115BC-A512-4B41-BB7F-9631F7A7ED11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FB1FC12-F242-43D3-984A-3669EF8BC23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FB1FC12-F242-43D3-984A-3669EF8BC23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FB1FC12-F242-43D3-984A-3669EF8BC23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FB1FC12-F242-43D3-984A-3669EF8BC23E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

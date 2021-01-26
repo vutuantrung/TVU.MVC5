@@ -178,13 +178,17 @@
     <Compile Include="Migrations\202101201519319_InitialModel.Designer.cs">
       <DependentUpon>202101201519319_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202101201531323_AddIsSubscribedToCustomer.cs" />
-    <Compile Include="Migrations\202101201531323_AddIsSubscribedToCustomer.Designer.cs">
-      <DependentUpon>202101201531323_AddIsSubscribedToCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202101201535446_AddmembershipType.cs" />
     <Compile Include="Migrations\202101201535446_AddmembershipType.Designer.cs">
       <DependentUpon>202101201535446_AddmembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101261732279_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202101261732279_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>202101261732279_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101261734262_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\202101261734262_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>202101261734262_PopulateMembershipTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -276,11 +280,14 @@
     <EmbeddedResource Include="Migrations\202101201519319_InitialModel.resx">
       <DependentUpon>202101201519319_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101201531323_AddIsSubscribedToCustomer.resx">
-      <DependentUpon>202101201531323_AddIsSubscribedToCustomer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101201535446_AddmembershipType.resx">
       <DependentUpon>202101201535446_AddmembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101261732279_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>202101261732279_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101261734262_PopulateMembershipTypes.resx">
+      <DependentUpon>202101261734262_PopulateMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
